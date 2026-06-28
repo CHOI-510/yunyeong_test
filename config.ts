@@ -1,4 +1,4 @@
-export const SPLASH_TEXT = [`○○, ○○ 결혼합니다.`];
+export const SPLASH_TEXT = [`재상, 윤영 결혼합니다.`];
 
 // 비디오 정보 (첫 화면 비디오가 있으면 배너 이미지 보다는 비디오가 우선적으로 보여짐)
 export const VIDEO_URL = '';
@@ -6,16 +6,16 @@ export const POSTER_URL = '';
 
 // 배너 이미지 (맨위 처음에 보여지는 사진)
 export const BANNERIMAGE =
-  'https://imagedelivery.net/9PYUDgg_yiUa2u-j77sFBg/d5b8c0a2-13c7-4e81-70ee-20f263346200/tog';
+  '/example2.jpg';
 
 // 결혼 초대장 문구 다음으로 보여질 이미지
 export const WEDDING_INVITATION_IMAGE =
-  'https://imagedelivery.net/9PYUDgg_yiUa2u-j77sFBg/b64b73bf-f02c-42a7-55f9-1dcf79afa700/public';
+  '/example1.jpg';
 
 // 지도 & 날짜 정보
-export const WEDDING_DATE = '2025.03.15';
-export const WEDDING_LOCATION = '○○○○ ○○○ ○F, ○○○○';
-export const WEDDING_LOCATION_NAME = '○○○○○○○홀';
+export const WEDDING_DATE = '2026.09.05';
+export const WEDDING_LOCATION = '더컨벤션 영등포 2F, 다이너스티홀';
+export const WEDDING_LOCATION_NAME = '다이너스티홀';
 export const WEDDING_ADDRESS = '○○○○ ○○○ ○○○○';
 export const WEDDING_LOCATION_TEL = '○○○-○○○-○○○○';
 export const WEDDING_LOCATION_SUBWAY = '[○○호선] ○○역 ○○역 ○번 출구 도보 ○분';
@@ -28,34 +28,34 @@ export const WEDDING_MAP_LOT = 37.5739539541608; // 경도
 export const WEDDING_MAP_LAT = 127.085105452975; // 위도
 
 // 신랑 & 신부 정보
-export const GROOM_NAME = '○○○';
+export const GROOM_NAME = '하재상';
 export const GROOM_FATHER_NAME = '○○○';
 export const GROOM_MOTHER_NAME = '○○○';
-export const BRIDE_NAME = '○○○';
+export const BRIDE_NAME = '허윤영';
 export const BRIDE_FATHER_NAME = '○○○';
 export const BRIDE_MOTHER_NAME = '○○○';
 
 // 연락처
 export const GROOM_CONTACT = [
-  { designation: '신랑', name: '○○○', phone: '○○○-○○○-○○○○' },
+  { designation: '신랑', name: '하재상', phone: '○○○-○○○-○○○○' },
   { designation: '신랑 父', name: '○○○', phone: '○○○-○○○-○○○○' },
   { designation: '신랑 母', name: '○○○', phone: '○○○-○○○-○○○○' },
 ];
 export const BRIDE_CONTACT = [
-  { designation: '신부', name: '○○○', phone: '○○○-○○○-○○○○' },
+  { designation: '신부', name: '허윤영', phone: '○○○-○○○-○○○○' },
   { designation: '신부 父', name: '○○○', phone: '○○○-○○○-○○○○' },
   { designation: '신부 母', name: '○○○', phone: '○○○-○○○-○○○○' },
 ];
 
 // 계좌번호 정보
 export const GROOM_ACCOUNTS = [
-  { holder: '○○○', bank: '○○은행', number: '○○○-○○○-○○○○' },
+  { holder: '하재상', bank: '땡땡은행', number: '111-222-3333' },
   { holder: '○○○', bank: '○○은행', number: '○○○-○○○-○○○○' },
   { holder: '○○○', bank: '○○은행', number: '○○○-○○○-○○○○' },
 ];
 
 export const BRIDE_ACCOUNTS = [
-  { holder: '○○○', bank: '○○은행', number: '○○○-○○○-○○○○' },
+  { holder: '허윤영', bank: '펩시은행', number: '999-888-7777' },
   { holder: '○○○', bank: '○○', number: '○○○-○○○-○○○○' },
   { holder: '○○○', bank: '○○○뱅크', number: '○○○-○○○-○○○○' },
 ];

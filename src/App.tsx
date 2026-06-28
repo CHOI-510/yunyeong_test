@@ -10,14 +10,14 @@ import Gallery from '@/components/gallery';
 import MapNaver from '@/components/map-naver';
 import MapInfo from '@/components/map-info';
 import BankAccordion from '@/components/bank-accordion';
-import CommentFormDialog from '@/components/comment-form-dialog';
-import CommentList from '@/components/comment-list';
-import Share from '@/components/share';
+// import CommentFormDialog from '@/components/comment-form-dialog';
+// import CommentList from '@/components/comment-list';
+// import Share from '@/components/share';
 import BannerImage from '@/components/banner-image';
 import BackgroundMusic from '@/components/background-music';
 import LoaderLoading from '@/common/components/loader-loading';
 import { useVideoCheck } from '@/hooks/use-video-check';
-import { useState } from 'react';
+// import { useState } from 'react';
 import {
   BRIDE_ACCOUNTS,
   GALLERY_IMAGES,
@@ -29,7 +29,7 @@ import {
 
 function App() {
   const { hasVideo, isChecking } = useVideoCheck(VIDEO_URL);
-  const [, setMessageAdded] = useState(false);
+  // const [, setMessageAdded] = useState(false);
 
   return (
     <>
@@ -114,39 +114,8 @@ function App() {
             <BankAccordion title='신부측 계좌번호' bankList={BRIDE_ACCOUNTS} />
           </Intersect>
         </section>
-        {/* 방명록 */}
-        <section className='my-20 '>
-          <Intersect className='space-y-8'>
-            <h2 className='text-center'>축하 메시지</h2>
-            <div className='text-center'>
-              <CommentFormDialog
-                onSuccess={() => setMessageAdded((prev) => !prev)}
-              />
-            </div>
-
-            <CommentList
-              onMessageAdded={() => setMessageAdded((prev) => !prev)}
-            />
-          </Intersect>
-        </section>
-        {/* 공유하기 */}
-        <footer className='relative mt-20 pb-10'>
-          <div className='flex items-center justify-center'>
-            <Share />
-          </div>
-          <p className='mt-20 text-xs px-8'>
-            © 2025{' '}
-            <a
-              href='https://www.hyun-seok.com/'
-              target='_blank'
-              className='font-bold'
-              rel='noreferrer'
-            >
-              ssseok
-            </a>
-            . All rights reserved.
-          </p>
-        </footer>
+        
+        
       </Layout>
     </>
   );
