@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install --legacy-peer-deps && vite build",
+    "prebuild": "npm install --legacy-peer-deps"
+    "build": "tsc && vite build",
     "lint": "eslint  \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix  \"src/**/*.{js,jsx,ts,tsx}\""
   },
